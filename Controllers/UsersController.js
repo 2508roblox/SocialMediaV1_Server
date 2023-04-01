@@ -5,7 +5,7 @@ export const handleGetUser = async (req, res) => {
     let id = req.params.id
     console.log(id);
     let user = await Users.findById(id)
-    let { password, ...orderDetails } = user._doc
+    let { password, ...orderDetails } = user?._doc
 
     try {
         if (user) {

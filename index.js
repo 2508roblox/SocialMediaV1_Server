@@ -24,7 +24,7 @@ const server = http.createServer(app);
 // server vua dung cho express vua dung cho socket
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3001"
+        origin: "https://2508roblox.github.io"
         // cho phep server ket noi dung domain nay de lay thong tin
 
     }
